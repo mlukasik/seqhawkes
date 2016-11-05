@@ -1,6 +1,12 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 '''
+Copyright (c) 2014-2015, The University of Sheffield. 
+This file is part of the seqhawkes software 
+(see https://github.com/mlukasik/seqhawkes), 
+and is free software, licenced under the GNU Library General Public License,
+Version 2, June 1991 (in the distribution as file LICENSE).
+
 Created on 9 Nov 2015
 
 @author: michal
