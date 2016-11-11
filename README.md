@@ -6,8 +6,17 @@ In Proceedings of the 54th annual meeting of the Association for Computational L
 
 #Dataset
 The dataset that the experiments were run on are Twitter rumours from the PHEME datasets
-(Zubiaga et al. 2016, Analysing how people orient to and spread rumours in social media by looking at conversational threads. PLoS ONE, 11(3):1–29, 03.).
-In folder data, we provide processed data files used for experiments. If you would like to access the raw dataset please contact Zubiaga et al.
+(Zubiaga et al. 2016, Analysing how people orient to and spread rumours in social media by looking at conversational threads. PLoS ONE, 11(3):1â€“29, 03.).
+In the 'data' folder we provide processed data files used for experiments. If you would like to access the raw dataset please contact Zubiaga et al.
+
+Each datafile is in a tab-seperated column format, where rows correspond to tweets. Consecutive columns correspond to the following pieces of information describing a tweet:
+* rumourid - a unique identifier describing the rumour that a tweet is part of (manually annotated)
+* tweetid - a unique identitifier of a tweet (corresponds to the 'id' field in the json format from Twitter; the ids are mapped to consecutive integer values)
+* infectingtweetid - a unique identitifier of an infecting tweet (corresponds to 'in_reply_to_status_id' field in the json format from Twitter, or tweetid if the 'in_reply_to_status_id' field is absent; the ids are mapped to consecutive integer values)
+* sdqclabel - a support/deny/question/comment tweet label (manually annotated)
+* time - timestamp when a tweet happened (corresponds to the 'created_at' field in the json format from Twitter)
+* tokenslen - number of unique tokens in a tweet (extracted from the 'text' field in the json format from Twitter)
+* list-of-tokens-and-counts - the rest of the line consists space seperated token-count pairs, where a token-count pair is in format "token:count". E.g. "token1:count1 token2:count2" (extracted from the 'text' field in the json format from Twitter)
 
 #Dependencies
 You need to install the following Python libraries: 
