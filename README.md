@@ -2,7 +2,7 @@
 Code to reproduce experiments from the following paper:
 
 Michal Lukasik, P. K. Srijith, Duy Vu, Kalina Bontcheva, Arkaitz Zubiaga, Trevor Cohn. Hawkes Processes for Continuous Time Sequence Classification: an Application to Rumour Stance Classification in Twitter.
-In Proceedings of the 54th annual meeting of the Association for Computational Linguistics, ACL 2015. 
+In Proceedings of the 54th annual meeting of the Association for Computational Linguistics, ACL 2016. 
 
 #Dataset
 The dataset that the experiments were run on are Twitter rumours from the PHEME datasets
